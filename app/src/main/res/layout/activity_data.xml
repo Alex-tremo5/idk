@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataActivity"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/datos_ingresados"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tvName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yourName"
+        android:textSize="25sp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tvColor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yourColor"
+        android:textSize="25sp"
+        android:layout_margin="8dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tvSong1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yourSong"
+        android:layout_margin="8dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:id="@+id/tvSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tvPhone1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yourPhone"
+        android:layout_margin="8dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tvMovie1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/yourMovie"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:id="@+id/tvMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tvAge1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yourAge"
+        android:layout_margin="8dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+    <TextView
+        android:id="@+id/tvSome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/do_you"
+        android:layout_margin="8dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:id="@+id/cbSomeone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tvLice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/do_you_have_lice"
+        android:textSize="25sp"
+        android:layout_margin="8dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:id="@+id/cbLice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

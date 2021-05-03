@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">All</string>
+    <string name="formulario">Formulario</string>
+    <string name="Ingrese_sus_datos">Ingrese sus datos</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="song">Song</string>
+    <string name="color">Color</string>
+    <string name="do_you_have_lice">Do you have lice?</string>
+    <string name="movie">Movie</string>
+    <string name="phone">Phone</string>
+    <string name="do_you">Do you like someone?</string>
+    <string name="verificar">Verify</string>
+    <string name="do_you_like_someone">Do you like someone?</string>
+    <string name="datos_ingresados">Data entered</string>
+    <string name="slot">Slot Machine</string>
+    <string name="spin">Spin Roll</string>
+    <string name="won">You won!</string>
+    <string name="lose">Try again</string>
+    <string name="prizes">Prizes</string>
+    <string name="image">By image:</string>
+    <string name="tres">= 30</string>
+    <string name="cinco">= 500</string>
+    <string name="dos">= 200</string>
+    <string name="ocho">= 800</string>
+    <string name="yourName">Your name:</string>
+    <string name="yourColor">Your favorite color:</string>
+    <string name="yourSong">Your favorite song:</string>
+    <string name="yourPhone">Your phone:</string>
+    <string name="yourMovie">Your favorite movie:</string>
+    <string name="yourAge">Your age:</string>
+    <string name="siete">= 70</string>
+    <string name="one">= 10</string>
+    <string name="mil">= 1000</string>
+    <string name="insert">Insert coin</string>
+    <string name="I_know">I don\'t know</string>
+    <string name="find">Find anything</string>
+
+</resources>

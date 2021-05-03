@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".machine.PrizesActivity"
+    android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/imageViewC"
+            android:layout_width="71dp"
+            android:layout_height="72dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="24dp"
+            tools:src="@drawable/cereza"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textViewP"
+        android:layout_width="208dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="serif-monospace"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/imageViewC"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/tres" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
