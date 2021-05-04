@@ -1,4 +1,4 @@
-package com.example.idk
+package com.example.idk.start
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.idk.start.MainActivity
+import com.example.idk.R
 
 class SplashActivity : AppCompatActivity() {
 
@@ -31,8 +31,12 @@ class SplashActivity : AppCompatActivity() {
         tittle = findViewById(R.id.tvDont)
         sub = findViewById(R.id.tvSub)
 
-        topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation)
-        botAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation)
+        topAnim = AnimationUtils.loadAnimation(this,
+            R.anim.top_animation
+        )
+        botAnim = AnimationUtils.loadAnimation(this,
+            R.anim.bottom_animation
+        )
 
         loadAnimation()
         loadMainScreen()

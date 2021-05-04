@@ -15,7 +15,7 @@
         <activity android:name=".DataActivity" />
         <activity android:name=".form.FormActivity" />
 
-        <activity android:name=".SplashActivity"
+        <activity android:name=".start.SplashActivity"
             android:theme="@style/Theme.Idk.NoActionBar">
 
             <intent-filter>
