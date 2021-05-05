@@ -74,48 +74,6 @@ class GameActivity : AppCompatActivity() {
 
     }
 
-    fun decrease() {
-        println("counter $counter")
-        if (counter > 0) {
-            counter -= 10
-            number.text = counter.toString()
-        }
-
-        if (counter == 0) {
-            spin.isEnabled = false
-        }
-
-        val prize1 = Prize(
-         R.drawable.cereza,
-         30)
-
-        val prize2 = Prize(
-            R.drawable.sandia,
-            200)
-
-        val prize3 = Prize(
-            R.drawable.naranja,
-            500)
-
-        val prize4 = Prize(
-            R.drawable.bar,
-            800)
-
-        val prize5 = Prize(
-            R.drawable.campana,
-            10)
-
-        val prize6 = Prize(
-            R.drawable.hoja,
-            70)
-
-        val prize7 = Prize(
-            R.drawable.siete,
-            1000)
-
-
-    }
-
     fun sound() {
         val mp: MediaPlayer = MediaPlayer.create(applicationContext,
             R.raw.insert_coin_effect
@@ -124,7 +82,7 @@ class GameActivity : AppCompatActivity() {
     }
 
     fun roulette() {
-        decrease()
+
 
         val aleatorio1 = image.random()
         val aleatorio2 = image.random()
