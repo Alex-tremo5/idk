@@ -1,6 +1,6 @@
 package com.example.idk.clases
 
-class Car() {
+class Car {
 
     var color: String = ""
     var model: String = ""
@@ -9,39 +9,39 @@ class Car() {
     var wheels: Int = 0
 
 
- fun specifications (){
+    fun specifications() {
 
-    println("The car")
-    println("is $color")
-    println("is a$model")
-    println("has $doors doors")
-    println("has $seating seating")
-    println("and has $wheels wheels")
-}
+        println("The car")
+        println("is $color")
+        println("is a$model")
+        println("has $doors doors")
+        println("has $seating seating")
+        println("and has $wheels wheels")
+    }
 
- fun openDoors (){
-     println("open the doors")
- }
+    fun openDoors() {
+        println("open the doors")
+    }
 
- fun closeDoors (){
-    println("close the doors")
- }
+    fun closeDoors() {
+        println("close the doors")
+    }
 
- fun turnOn (){
-     println("turn on the light")
- }
+    fun turnOn() {
+        println("turn on the light")
+    }
 
- fun turnOff (){
+    fun turnOff() {
         println("turn off the light")
     }
 
- fun lock (){
-     println("lock the doors")
- }
+    fun lock() {
+        println("lock the doors")
+    }
 
- fun unlock(){
-     println("unlock the doors")
- }
+    fun unlock() {
+        println("unlock the doors")
+    }
 
 }
 
