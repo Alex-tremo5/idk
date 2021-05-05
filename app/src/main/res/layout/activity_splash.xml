@@ -12,7 +12,7 @@
         android:layout_width="419dp"
         android:layout_height="524dp"
         android:layout_marginTop="16dp"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:src="@drawable/satori"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
