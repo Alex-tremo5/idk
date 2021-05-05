@@ -1,6 +1,5 @@
 package com.example.idk.examples
 
-import android.inputmethodservice.Keyboard
 
 fun name(name: String) {
     println("Your name is $name")
