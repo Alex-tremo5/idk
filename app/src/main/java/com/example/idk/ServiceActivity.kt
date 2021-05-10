@@ -10,27 +10,35 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class ServiceActivity : AppCompatActivity() {
+    lateinit var result: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_service)
         getGames()
-
+        result = findViewById(R.id.tvService)
 
     }
+
     private fun getGames() {
+        Thread(Runnable {
+            ApiClient.apiService.getGames().enqueue(object :
+                Callback<MutableList<DogamiGameResult>> {
+                override fun onFailure(call: Call<MutableList<DogamiGameResult>>, t: Throwable) {
+                    result.post {
+                        result.text = "Error loading data :("
+                    }
+                }
 
-        ApiClient.apiService.getGames().enqueue(object : Callback<MutableList<DogamiGameResult>> {
-            override fun onFailure(call: Call<MutableList<DogamiGameResult>>, t: Throwable) {
-                //Show error
-            }
-
-            override fun onResponse(
-                call: Call<MutableList<DogamiGameResult>>,
-                response: Response<MutableList<DogamiGameResult>>
-            ) {
-                val usersResponse = response.body()
-            }
-        })
+                override fun onResponse(
+                    call: Call<MutableList<DogamiGameResult>>,
+                    response: Response<MutableList<DogamiGameResult>>
+                ) {
+                    result.post {
+                        result.text = response.body().toString()
+                    }
+                }
+            })
+        }).start()
 
     }
 

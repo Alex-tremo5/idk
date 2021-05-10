@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btCall.setOnClickListener {
-            val inte: Intent = Intent (this, ServiceActivity::class .java)
+            val inte: Intent = Intent(this, ServiceActivity::class.java)
+            startActivity(inte)
         }
     }
 }
