@@ -22,7 +22,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textViewP"
+        android:id="@+id/textViewService"
         android:layout_width="208dp"
         android:layout_height="67dp"
         android:layout_marginStart="32dp"
@@ -31,9 +31,10 @@
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageViewService"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
         tools:text="@string/cinco" />
 
 

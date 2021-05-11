@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.AppCompatButton
 import com.example.idk.R
-import com.example.idk.ServiceActivity
+import com.example.idk.service.ServiceActivity
 import com.example.idk.form.FormActivity
 import com.example.idk.machine.GameActivity
 

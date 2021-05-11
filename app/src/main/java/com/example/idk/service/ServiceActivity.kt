@@ -1,8 +1,9 @@
-package com.example.idk
+package com.example.idk.service
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.idk.R
 import com.example.idk.data.ApiClient
 import com.example.idk.data.DogamiGameResult
 import retrofit2.Call
