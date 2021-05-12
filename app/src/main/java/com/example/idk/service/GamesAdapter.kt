@@ -16,7 +16,7 @@ class GamesAdapter(val context: Context?, data: List<DogamiGameResult>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View =
-            LayoutInflater.from(context).inflate(R.layout.view_service, parent, false)
+            LayoutInflater.from(context).inflate(R.layout.game_item_example, parent, false)
         return ViewHolder(view)
     }
 
@@ -36,7 +36,7 @@ class GamesAdapter(val context: Context?, data: List<DogamiGameResult>) :
 
     class ViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView) {
-        var gameImage: ImageView = itemView.findViewById(R.id.imageViewService)
-        var gameValue: TextView = itemView.findViewById(R.id.textViewService)
+        var gameImage: ImageView = itemView.findViewById(R.id.ivGamePoster)
+        var gameValue: TextView = itemView.findViewById(R.id.ivGameName)
     }
 }
