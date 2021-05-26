@@ -1,5 +1,7 @@
 package com.example.idk.data
 
+data class Games(val games: List<DogamiGameResult>)
+
 data class DogamiGameResult(
     val id: Int,
     val name: String,
