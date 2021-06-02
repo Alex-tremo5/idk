@@ -3,8 +3,10 @@ package com.example.idk.service
 import GamesAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Adapter
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.idk.R
@@ -18,10 +20,12 @@ import retrofit2.Response
 class ServiceActivity : AppCompatActivity() {
     lateinit var gameView: RecyclerView
     lateinit var adapter: GamesAdapter
+    lateinit var error: ConstraintLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_service)
+        error = findViewById(R.id.textViewInternet)
         getGames()
         gameView = findViewById(R.id.rvGames)
         gameView.layoutManager =
@@ -37,7 +41,7 @@ class ServiceActivity : AppCompatActivity() {
                 Callback<Games> {
 
                 override fun onFailure(call: Call<Games>, t: Throwable) {
-                    TODO("Not yet implemented")
+                    showErrorView()
                 }
 
                 override fun onResponse(call: Call<Games>, response: Response<Games>) {
@@ -45,12 +49,27 @@ class ServiceActivity : AppCompatActivity() {
                         val body = response.body()
                         body?.run {
                             showGames(this.games)
+                            showListView()
+
+
                         }
                     }
                 }
             })
         }).start()
     }
+
+    private fun showListView(){
+        error.visibility= View.GONE
+        gameView.visibility= View.VISIBLE
+
+    }
+    private fun showErrorView(){
+        error.visibility= View.VISIBLE
+        gameView.visibility= View.GONE
+
+    }
+
     private fun showGames(list: List<DogamiGameResult>?) {
         list?.run {
             adapter = GamesAdapter(this@ServiceActivity, this.toMutableList())
