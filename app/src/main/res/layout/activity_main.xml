@@ -39,13 +39,31 @@
         android:orientation="vertical"
         android:text="@string/slot"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.465"
-        tools:ignore="InvalidId" />
+        tools:ignore="InvalidId"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btCall"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:background="@drawable/edge"
+        android:fontFamily="sans-serif-smallcaps"
+        android:backgroundTint="#00838F"
+        app:layout_constraintHorizontal_bias="0.551"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="@string/call"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSlot"
+        app:layout_constraintVertical_bias="0.102" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

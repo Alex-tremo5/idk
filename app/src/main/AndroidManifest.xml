@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.idk">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcheri"
@@ -9,15 +11,15 @@
         android:roundIcon="@mipmap/ic_launcheri_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Idk">
-        <activity android:name=".start.MainActivity"></activity>
+        <activity android:name=".service.ServiceActivity"/>
+        <activity android:name=".start.MainActivity" />
         <activity android:name=".machine.PrizesActivity" />
         <activity android:name=".machine.GameActivity" />
         <activity android:name=".DataActivity" />
         <activity android:name=".form.FormActivity" />
-
-        <activity android:name=".start.SplashActivity"
+        <activity
+            android:name=".start.SplashActivity"
             android:theme="@style/Theme.Idk.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

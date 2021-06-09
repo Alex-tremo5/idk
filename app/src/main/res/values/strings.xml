@@ -35,5 +35,7 @@
     <string name="insert">Insert coin</string>
     <string name="I_know">I don\'t know</string>
     <string name="find">Find anything</string>
+    <string name="call">Call Service</string>
+    <string name="You">You\'re not connected to internet</string>
 
 </resources>
