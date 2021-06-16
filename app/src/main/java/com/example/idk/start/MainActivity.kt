@@ -8,6 +8,7 @@ import com.example.idk.R
 import com.example.idk.service.ServiceActivity
 import com.example.idk.form.FormActivity
 import com.example.idk.machine.GameActivity
+import com.example.idk.service.gameDetail.GameDetailActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
