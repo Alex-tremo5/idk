@@ -1,14 +1,13 @@
 package com.example.idk.start
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.example.idk.R
-import com.example.idk.service.ServiceActivity
 import com.example.idk.form.FormActivity
 import com.example.idk.machine.GameActivity
-import com.example.idk.service.gameDetail.GameDetailActivity
+import com.example.idk.service.ServiceActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

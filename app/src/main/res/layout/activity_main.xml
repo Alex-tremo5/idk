@@ -29,6 +29,7 @@
         android:id="@+id/btSlot"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:backgroundTint="#D30505"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginEnd="10dp"
@@ -49,9 +50,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btCall"
-        android:layout_width="400dp"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@drawable/edge"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:fontFamily="sans-serif-smallcaps"
         android:backgroundTint="#00838F"
         app:layout_constraintHorizontal_bias="0.551"
