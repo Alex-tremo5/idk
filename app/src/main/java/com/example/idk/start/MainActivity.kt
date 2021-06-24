@@ -21,17 +21,17 @@ class MainActivity : AppCompatActivity() {
 
 
         bformulario.setOnClickListener {
-            val inte: Intent = Intent(this, FormActivity::class.java)
+            val inte = Intent(this, FormActivity::class.java)
             startActivity(inte)
         }
 
         btSlot.setOnClickListener {
-            val inte: Intent = Intent(this, GameActivity::class.java)
+            val inte = Intent(this, GameActivity::class.java)
             startActivity(inte)
         }
 
         btCall.setOnClickListener {
-            val inte: Intent = Intent(this, ServiceActivity::class.java)
+            val inte = Intent(this, ServiceActivity::class.java)
             startActivity(inte)
         }
     }
