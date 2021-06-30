@@ -5,8 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Adapter
-import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -16,7 +14,6 @@ import com.example.idk.data.ApiClient
 import com.example.idk.data.DogamiGameResult
 import com.example.idk.data.Games
 import com.example.idk.service.gameDetail.GameDetailActivity
-import kotlinx.android.synthetic.main.view_content_scrolling.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
