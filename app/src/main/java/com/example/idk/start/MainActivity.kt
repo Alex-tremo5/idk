@@ -1,13 +1,13 @@
 package com.example.idk.start
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.example.idk.R
-import com.example.idk.service.ServiceActivity
 import com.example.idk.form.FormActivity
 import com.example.idk.machine.GameActivity
+import com.example.idk.service.ServiceActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,17 +20,17 @@ class MainActivity : AppCompatActivity() {
 
 
         bformulario.setOnClickListener {
-            val inte: Intent = Intent(this, FormActivity::class.java)
+            val inte = Intent(this, FormActivity::class.java)
             startActivity(inte)
         }
 
         btSlot.setOnClickListener {
-            val inte: Intent = Intent(this, GameActivity::class.java)
+            val inte = Intent(this, GameActivity::class.java)
             startActivity(inte)
         }
 
         btCall.setOnClickListener {
-            val inte: Intent = Intent(this, ServiceActivity::class.java)
+            val inte = Intent(this, ServiceActivity::class.java)
             startActivity(inte)
         }
     }

@@ -37,5 +37,8 @@
     <string name="find">Find anything</string>
     <string name="call">Call Service</string>
     <string name="You">You\'re not connected to internet</string>
+    <string name="cantidad">Cantidad de jugadores:</string>
+    <string name="duracion">Duración de partida:</string>
+    <string name="complexity">Complejidad:</string>
 
 </resources>
