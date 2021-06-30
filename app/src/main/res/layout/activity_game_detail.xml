@@ -31,7 +31,8 @@
                 android:id="@+id/gameDetailToolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                tools:title="Hombres Lobo de Castronegro" />
+                tools:title="Hombres Lobo de Castronegro"
+                />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
